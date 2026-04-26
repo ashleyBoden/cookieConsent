@@ -1,0 +1,81 @@
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cookie-consent-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.close-btn {
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    grid-area: close;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-top: 0px;
+    margin-right: 5px;
+    background: none;
+}
+
+.cookie-consent-card {
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    height: 100%;
+    max-height: 350px;
+    display: grid;
+    grid-template-areas: 
+        "icon close"
+        "text text"
+        "accept accept";
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(144, 144, 247);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.cookie-consent-card.hidden {
+    display: none;
+}
+
+.accept-btn {
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    width: 80%;
+    grid-area: accept;
+    margin: 5px auto 20px auto;
+}
+
+.cookie-icon {
+    grid-area: icon;
+    padding: 20px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.cookie-consent-card p {
+    grid-area: text;
+    margin-top: 100px;
+    align-self: center;
+    padding: 0 40px;
+}
+
+.accept-btn:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+

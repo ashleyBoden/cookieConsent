@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Simple website</h1>
+        <p>This is a simple website created for demonstration purposes.</p>
+
+        <div class="cookie-consent-card hidden">
+            <img src="Assets/cookie.png" alt="Cookie Icon" class="cookie-icon">
+            <button class="close-btn">x</button>
+            <p>We use cookies to improve your user experience. To get the best experience, please accept below.</p>
+            <button class="accept-btn">I like cookies</button>
+        </div>
+        <script src="script.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                setTimeout(showCookieConsent, 2000);
+            });
+        </script>
+
+    </body>
+</html>
